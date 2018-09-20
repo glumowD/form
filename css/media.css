@@ -1,0 +1,114 @@
+@media only screen and (max-width : 576px){
+	#person{
+		padding: 0;
+		position: relative;
+		background: none;
+	}
+
+	main{
+		border-radius: 0;
+		box-shadow: none;
+	}
+
+	#nav ul li a{
+		border-radius: 0;
+	}
+}
+
+@media only screen and (max-width : 492px){
+	#wrapper{
+		overflow-y: hidden;
+	}
+
+	#nav{
+		position: fixed;
+		width: 100%;
+		top: 0;
+		background: rgba(0,0,0,.7);
+		padding: 10px 0;
+	}
+
+	#nav ul{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#nav ul li a{
+		box-shadow: none;
+	}
+
+	main{
+		height: 100%;
+		margin-top: 58px;
+	}
+
+	#profile{
+		display: block;
+	}
+
+	#profile > div{
+		display: block;
+	}
+
+
+	#profile .forma{
+		margin-top: 10px;
+	}
+
+	#profile .avatar{
+		max-width: 100%;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		padding: 0;
+	}
+
+	#addInt{
+		display: none;
+	}
+
+	#profile .avatar p a{
+		padding: 10px;
+	}
+
+	.forma .info-person > div{
+		display: block;
+	}
+
+	.info-person > div p{
+		margin-bottom: 5px;
+	}
+
+	.forma .info-person > div input{
+		width: 100%;
+	}
+
+	#interest .form-int{
+		display: block;
+		position: relative;
+	}
+
+	#interest input{
+		width: 100%;
+		box-sizing: border-box;
+		margin-right: 0;
+	}
+
+	#addInt{
+		position: absolute;
+		top: 0;
+		right: 10px;
+		border: none;
+	}
+}
+
+@media only screen and (max-width : 360px){
+	.friend{
+		flex-flow: column;
+		align-items: center;
+	}
+
+	#friends .friend figure{
+		margin: 0 0 5px 0;
+	}
+}

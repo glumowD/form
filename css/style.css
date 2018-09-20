@@ -1,0 +1,282 @@
+@import 'reset.css';
+
+#person{
+	margin: 0 auto;
+	background: #e0e0e0;
+	padding: 46px 42px;
+	max-width: 590px;
+	font-family: Arial, sans-serif;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+#nav ul{
+	font-size: 0;
+}
+#nav li{
+	display: inline-block;
+	border-radius: 7px  7px 0 0;
+}
+
+#nav li a{
+	font-size: 14px;
+	padding: 12px;
+	border-radius: 7px  7px 0 0;
+	-webkit-box-shadow: -1px -2px 3px #b3b3b3;
+	        box-shadow: -1px -2px 3px #b3b3b3;
+	display: block;
+	text-decoration: none;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0685b4), to(#1e65a6));
+	background: -webkit-linear-gradient(top, #0685b4, #1e65a6);
+	background: -o-linear-gradient(top, #0685b4, #1e65a6);
+	background: linear-gradient(180deg, #0685b4, #1e65a6);
+	color: #fff;
+}
+
+#nav li:not(:last-child){
+	margin-right: 10px;
+}
+
+main{
+	padding: 12px;
+	display: block;
+	background: #fff;
+	-webkit-box-shadow:-1px 2px 3px #b3b3b3;
+	        box-shadow:-1px 2px 3px #b3b3b3;
+	border-radius: 0 7px 7px 7px;
+	height: 280px;
+}
+
+#wrapper{
+	overflow-y: auto;
+	height: 100%;
+}
+
+#wrapper::-webkit-scrollbar{
+    width:5px;
+}
+
+#wrapper::-webkit-scrollbar-thumb{
+    background-color: #107bb1;
+    border-radius: 50px;
+}
+
+#wrapper::-webkit-scrollbar-track{
+    background: #ededed;
+    border-radius: 50px;
+}
+
+#profile{
+	display: table;
+}
+
+#profile > div{
+	display: table-cell;
+	vertical-align: top;
+}
+
+#profile .avatar{
+	max-width: 133px;
+	padding-right: 20px;
+}
+
+
+#profile .avatar figure{
+	margin-bottom: 5px;
+}
+
+#addFriend{
+	background: -webkit-gradient(linear, left top, left bottom, from(#fa8e02), color-stop(#e68200), to(#e65200));
+	background: -webkit-linear-gradient(top, #fa8e02, #e68200, #e65200);
+	background: -o-linear-gradient(top, #fa8e02, #e68200, #e65200);
+	background: linear-gradient(180deg, #fa8e02, #e68200, #e65200);
+	border-radius: 3px;
+}
+
+#addFriend a{
+	font-size: 12px;
+	text-decoration: none;
+	display: block;
+	padding: 10px 0;
+	text-align: center;
+	color: #fff;
+}
+
+.forma{
+	position: relative;
+	height: 100%;
+}
+
+.forma .standart{
+	border: 0;
+}
+
+.forma .name-sity{
+	margin-bottom: 20px;
+}
+
+.forma .name-sity input{
+	width: 100%;
+	padding: 0;
+}
+
+.forma .info-person > div{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+#name{
+	font-size: 23px;
+}
+
+#location{
+	font-size: 11px;
+	color: #757575;
+}
+
+.info-person > div{
+	margin-bottom: 10px;
+}
+
+.info-person > div, .tags, .info-person input{
+	font-size: 12px;
+}
+
+.info-person > div p, .tags p{
+	font-weight: bold;
+}
+
+.info-person .email input:not(:focus){
+	color: #1574af;
+	text-decoration: underline;
+}
+
+.forma > form input:focus{
+	padding: 5px 10px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.forma > input{
+	-webkit-box-shadow: inset 0 0 0 50px #fff;
+	        box-shadow: inset 0 0 0 50px #fff;
+}
+
+.tags p{
+	margin-bottom: 10px;
+}
+
+#list-interests{
+	font-size: 0;
+}
+
+#list-interests a{
+	font-size: 11px;
+	margin: 5px 5px 0 0;
+}
+
+.tags a{
+	display: inline-block;
+	padding: 8px;
+	border: 1px solid #d5d5d5;
+	border-radius: 3px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	text-decoration: none;
+	color: #1574af;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+#list-interests a:last-child{
+	margin-right: 0;
+}
+
+.tags a:hover{
+	background: #f3f3f3;
+	color: #000;
+}
+
+
+#friends{
+	-webkit-column-count: 2;
+	        column-count: 2;
+}
+
+#friends .friend{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 32px;
+}
+
+#friends .friend figure{
+	margin-right: 15px;
+}
+
+#friends .friend-name h3{
+	margin-bottom: 2px;
+}
+
+#friends .friend-name h3 a{
+	font-size: 14px;
+	color: #1575b1;
+	font-weight: bold;
+}
+
+#friends .friend-name small{
+	font-size: 11px;
+	color: #373737;
+}
+
+#interest input{
+	padding: 5px 10px;
+	border: 1px solid #d5d5d5;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	margin-right: 5px;
+}
+
+#interest .form-int{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+
+#friends .friend-name{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+#friends .friend-name .status{
+	font-size: 11px;
+	color: #6ba666;
+	font-style: italic;
+	padding-bottom: 5px;
+}
+
+.active-tab{
+	background: #fff !important;
+	color: #000 !important;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Форма</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+	<div id="person">
+		<nav id="nav">
+			<ul>
+				<li><a href="#profile" class="active-tab">Профиль</a></li>
+				<li><a href="#friends">Друзья пользователся</a></li>
+			</ul>
+		</nav>
+		<main>
+			<div id="wrapper">
+			<div id="profile">
+				<div class="avatar">
+					<figure>
+						<img src="images/avatar.jpg" alt="аватар">
+					</figure>
+					<p id="addFriend"><a href="#">Добавить в друзья</a></p>
+				</div>
+				<div class="forma">
+					<form>
+						<div class="name-sity">
+							<input type="text" name="name" id="name" value="Виталя Гора" class="standart">
+							<input type="text" name="location" id="location" value="г. Нижние Шахты" class="standart">
+						</div>
+						<div class="info-person">
+							<div class="famity">
+								<p>Семейное положение</p>
+								<input type="text" name="fam" value="Холост" class="standart">
+							</div>
+							<div class="phone">
+								<p>Телефон</p>
+								<input type="tel" name="phone" value="+7(440) 554-32-12" class="standart">
+							</div>
+							<div class="email">
+								<p>E-mail</p>
+								<input type="email" name="email" value="vitalya@gora.ru" class="standart" title="">
+							</div>
+						</div>
+					</form>
+					<div class="tags">
+						<form>
+							<div id="interest">
+							<p>Интересы</p>
+							<div class="form-int">
+									<input type="text" name="interests" placeholder="Добавьте свои интересы">
+									<a href="#" id="addInt">Добавить интерес</a>
+							</div>
+							</div>
+						</form>
+						<div id="list-interests">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="friends" style="display: none;">
+				<section class="friend">
+					<figure>
+						<img src="images/f1.jpg" alt="Друг">
+					</figure>
+					<div class="friend-name">
+						<div class="info-friend">
+							<h3><a href="#">Лев Бронштейн</a></h3>
+							<small>г. Ханты-Мансийск</small>
+						</div>
+						<div class="status">
+							<p>online</p>
+						</div>
+					</div>
+				</section>
+				<section class="friend">
+					<figure>
+						<img src="images/f2.jpg" alt="Друг">
+					</figure>
+					<div class="friend-name">
+						<div class="info-friend">
+							<h3><a href="#">Лев Бронштейн</a></h3>
+							<small>г. Ханты-Мансийск</small>
+						</div>
+						<div class="status">
+							<p>online</p>
+						</div>
+					</div>
+				</section>
+				<section class="friend">
+					<figure>
+						<img src="images/f3.jpg" alt="Друг">
+					</figure>
+					<div class="friend-name">
+						<div class="info-friend">
+							<h3><a href="#">Лев Бронштейн</a></h3>
+							<small>г. Ханты-Мансийск</small>
+						</div>
+						<div class="status">
+							<p>online</p>
+						</div>
+					</div>
+				</section>
+				<section class="friend">
+					<figure>
+						<img src="images/f4.jpg" alt="Друг">
+					</figure>
+					<div class="friend-name">
+						<div class="info-friend">
+							<h3><a href="#">Лев Бронштейн</a></h3>
+							<small>г. Ханты-Мансийск</small>
+						</div>
+						<div class="status">
+							<p>online</p>
+						</div>
+					</div>
+				</section>
+				<section class="friend">
+					<figure>
+						<img src="images/f5.jpg" alt="Друг">
+					</figure>
+					<div class="friend-name">
+						<div class="info-friend">
+							<h3><a href="#">Лев Бронштейн</a></h3>
+							<small>г. Ханты-Мансийск</small>
+						</div>
+						<div class="status">
+							<p>online</p>
+						</div>
+					</div>
+				</section>
+				<section class="friend">
+					<figure>
+						<img src="images/f6.jpg" alt="Друг">
+					</figure>
+					<div class="friend-name">
+						<div class="info-friend">
+							<h3><a href="#">Лев Бронштейн</a></h3>
+							<small>г. Ханты-Мансийск</small>
+						</div>
+						<div class="status">
+							<p>online</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			</div>
+		</main>
+	</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/tabs.js"></script>
+	<script src="js/interes.js" ></script>
+	<script src="js/storage.js" ></script>
+</body>
+</html>
